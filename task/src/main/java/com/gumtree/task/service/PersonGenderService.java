@@ -12,6 +12,6 @@ import com.gumtree.task.model.Person;
  */
 public interface PersonGenderService {
 
-	public long numberOfMales(List<Person> people);
+	public long numberOfMales(final List<Person> people);
 
 }
