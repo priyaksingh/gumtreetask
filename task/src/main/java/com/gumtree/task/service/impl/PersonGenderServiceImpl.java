@@ -20,7 +20,6 @@ public class PersonGenderServiceImpl implements PersonGenderService {
 
 	public static final String GENDER_MALE = "Male";
 
-	// 1. How many males are in the address book?
 	@Override
 	public long numberOfMales(List<Person> people) {
 		logger.info("Start numberOfMales.....");

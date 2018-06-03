@@ -20,7 +20,6 @@ public class PersonAgeServiceImpl implements PersonAgeService {
 
 	private static final Logger logger = LoggerFactory.getLogger(PersonAgeServiceImpl.class);
 
-	// 2. Who is the oldest person in the address book?
 	@Override
 	public Optional<Person> findOldestPerson(final List<Person> people) {
 		logger.info("Start findOldestPerson.....");
@@ -30,7 +29,6 @@ public class PersonAgeServiceImpl implements PersonAgeService {
 		return oldestPerson;
 	}
 
-	// 3.How many days older is Bill than Paul?
 	@Override
 	public long differenceInAge(final List<Person> people, final String person1, final String person2) {
 		logger.info("Start differenceInAge.....");
