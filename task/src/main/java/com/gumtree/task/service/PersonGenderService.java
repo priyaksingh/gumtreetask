@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.gumtree.task;
+package com.gumtree.task.service;
 
 /**
  * @author priyakrishna

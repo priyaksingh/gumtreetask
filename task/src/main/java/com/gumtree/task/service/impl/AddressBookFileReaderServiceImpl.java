@@ -24,8 +24,8 @@ import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.gumtree.task.AddressBookFileReaderService;
 import com.gumtree.task.model.Person;
+import com.gumtree.task.service.AddressBookFileReaderService;
 import com.gumtree.task.service.exception.AddressBookFileReaderException;
 
 /**
