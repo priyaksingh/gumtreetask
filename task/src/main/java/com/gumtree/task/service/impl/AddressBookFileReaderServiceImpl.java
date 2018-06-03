@@ -28,17 +28,26 @@ import com.gumtree.task.model.Person;
 import com.gumtree.task.service.AddressBookFileReaderService;
 import com.gumtree.task.service.exception.AddressBookFileReaderException;
 
+// TODO: Auto-generated Javadoc
 /**
+ * The Class AddressBookFileReaderServiceImpl.
+ *
  * @author priyakrishna
  */
 public class AddressBookFileReaderServiceImpl implements AddressBookFileReaderService {
 
+	/** The Constant logger. */
 	private static final Logger logger = LoggerFactory.getLogger(AddressBookFileReaderServiceImpl.class);
 
+	/** The Constant dateFormat. */
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yy");
 
+	/** The Constant ADDR_BOOK_FILE_NAME. */
 	private static final String ADDR_BOOK_FILE_NAME = "AddressBook.txt";
 
+	/* (non-Javadoc)
+	 * @see com.gumtree.task.service.AddressBookFileReaderService#processAddressBookFile()
+	 */
 	@Override
 	public List<Person> processAddressBookFile() throws AddressBookFileReaderException {
 		logger.info("Start processAddressBookFile.....");
@@ -60,6 +69,12 @@ public class AddressBookFileReaderServiceImpl implements AddressBookFileReaderSe
 		return personList;
 	}
 
+	/**
+	 * Convert to person obj.
+	 *
+	 * @param personStr the person str
+	 * @return the person
+	 */
 	private Person convertToPersonObj(final String personStr) {
 		logger.info("Start convertToPersonObj.....");
 		final String[] personStrArr = personStr.split(COMMA);
@@ -79,6 +94,12 @@ public class AddressBookFileReaderServiceImpl implements AddressBookFileReaderSe
 		return person;
 	}
 
+	/**
+	 * Calculate age.
+	 *
+	 * @param dob the dob
+	 * @return the int
+	 */
 	private int calculateAge(final Date dob) {
 		logger.info("Start calculateAge for DOB : {} ", dob);
 		LocalDate fullBirthday = dob.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
