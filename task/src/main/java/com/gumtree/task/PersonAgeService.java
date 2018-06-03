@@ -14,4 +14,6 @@ public interface PersonAgeService {
 
 	public Optional<Person> findOldestPerson();
 
+	public long differenceInAge();
+
 }

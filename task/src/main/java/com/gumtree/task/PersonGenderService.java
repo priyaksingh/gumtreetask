@@ -8,4 +8,6 @@ package com.gumtree.task;
  */
 public interface PersonGenderService {
 
+	public long numberOfMales();
+
 }
