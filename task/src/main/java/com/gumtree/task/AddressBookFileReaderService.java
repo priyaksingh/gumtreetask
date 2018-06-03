@@ -13,6 +13,10 @@ import com.gumtree.task.service.exception.AddressBookFileReaderException;
  */
 public interface AddressBookFileReaderService {
 
-	public List<Person> processFile() throws AddressBookFileReaderException;
+	public List<Person> processAddressBookFile() throws AddressBookFileReaderException;
 
+	/**
+	 * All constants for AddressBookFileReaderService
+	 */
+	public static final String COMMA = ",";
 }
